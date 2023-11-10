@@ -8,3 +8,15 @@ function Book(title, author, pages, read) {
 Book.prototype.info = function() {
     return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
 }
+
+const library =[];
+
+function addBookToLibrary(title, author, pages, read) {
+    library.push(new Book(title, author, pages, read))
+}
+
+function displayBooks() {
+    library.forEach((part) => {
+
+    });
+}
