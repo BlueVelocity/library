@@ -264,17 +264,20 @@ body {
 
 .book-widget,
 .add-book {
-    box-shadow: 5px 5px 5px var(--box-shadow);
+    box-shadow: 4px 4px 4px var(--box-shadow);
 }
 
 .book-widget:hover,
 .add-book:hover {
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 4px 4px 4px black;
     margin: 0px;
 }
 
+button:active,
+.nav-bar button:active,
 .add-book:active {
     background-color: var(--main-color);
     box-shadow: 2px 2px 2px inset grey;
+    color: black;
 }
 
