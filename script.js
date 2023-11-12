@@ -51,10 +51,14 @@ function createBookEntry(event) {
     let bookId = library.length;
 
     if (validateInputs(title, author, pages)) {
-        addBookToLibrary(title, author, pages, read, bookId);
-        exitAddBookMenu(event);
-    
-        generateBookWidget(title, author, pages, read, bookId);
+        if (!checkIfBookExists(title, author)){
+            addBookToLibrary(title, author, pages, read, bookId);
+            exitAddBookMenu(event);
+        
+            generateBookWidget(title, author, pages, read, bookId);
+        } else {
+            alert('Book entry exists!')
+        }
     }
 }
 
@@ -63,6 +67,15 @@ function removeBookEntry(event) {
     const correspondingWidget = document.getElementById(`book-id-${id}`)
     correspondingWidget.remove()
     library[id] = null;
+}
+
+function checkIfBookExists(title, author) {
+    for (let i = 0; i < library.length; i++) {
+        if (library[i].title.toLowerCase() === title.toLowerCase() &&
+            library[i].author.toLowerCase() === author.toLowerCase()) {
+                return true
+            }
+    }
 }
 
 function validateInputs(title, author, pages) {
