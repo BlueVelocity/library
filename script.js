@@ -24,11 +24,12 @@ function exitAddBookMenu(event) {
 }
 
 //Book classes and functions
-function Book(title, author, pages, read) {
+function Book(title, author, pages, read, bookId) {
     this.title = title;
     this.author = author;
-    this.page = pages;
+    this.page = Number(pages);
     this.read = read;
+    this.bookId = bookId;
 }
 
 Book.prototype.info = function() {
@@ -37,22 +38,23 @@ Book.prototype.info = function() {
 
 const library =[];
 
-function addBookToLibrary(title, author, pages, read) {
-    library.push(new Book(title, author, pages, read))
+function addBookToLibrary(title, author, pages, read, bookId) {
+    library.push(new Book(title, author, pages, read, bookId))
 }
 
 function createBookEntry(event) {
     event.preventDefault();
-    title = document.getElementById('title-input').value;
-    author = document.getElementById('author-input').value;
-    pages = document.getElementById('num-pages-input').value;
-    read = document.getElementById('read-input').checked;
+    let title = document.getElementById('title-input').value;
+    let author = document.getElementById('author-input').value;
+    let pages = document.getElementById('num-pages-input').value;
+    let read = document.getElementById('read-input').checked;
+    let bookId = library.length;
 
     if (validateInputs(title, author, pages)) {
-        addBookToLibrary(title, author, pages, read);
+        addBookToLibrary(title, author, pages, read, bookId);
         exitAddBookMenu(event);
     
-        generateBookWidget(title, author, pages, read, `book-id-${library.length}`);
+        generateBookWidget(title, author, pages, read, bookId);
     }
 }
 
