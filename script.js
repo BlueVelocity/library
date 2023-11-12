@@ -21,6 +21,7 @@ function displayAddBookMenu() {
 function exitAddBookMenu(event) {
     addBookMenu.setAttribute('style', 'visibility: hidden;');
     event.preventDefault();
+    clearInputFields();
 }
 
 //Book classes and functions
@@ -54,8 +55,8 @@ function createBookEntry(event) {
         if (!checkIfBookExists(title, author)){
             addBookToLibrary(title, author, pages, read, bookId);
             exitAddBookMenu(event);
-        
             generateBookWidget(title, author, pages, read, bookId);
+            clearInputFields();
         } else {
             alert('Book entry exists!')
         }
@@ -97,9 +98,14 @@ function toggleIsRead(id) {
     }
 }
 
-function generateBookWidget(title, author, pages, read, id) {
-    
+function clearInputFields() {
+    document.getElementById('title-input').value = '';
+    document.getElementById('author-input').value = '';
+    document.getElementById('num-pages-input').value = '';
+    document.getElementById('read-input').checked = false;
+}
 
+function generateBookWidget(title, author, pages, read, id) {
     const attArr = [title, author, pages];
     const attName = ['', 'by ', 'Pages: '];
     const bookWidget = document.createElement('div');
