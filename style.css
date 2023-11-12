@@ -317,7 +317,7 @@ button:active {
     grid-column: 1 / 7 ;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: start;
+    align-items: center;
     justify-items: center;
 
     font-size: 16px;
