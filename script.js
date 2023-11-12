@@ -58,6 +58,13 @@ function createBookEntry(event) {
     }
 }
 
+function removeBookEntry(event) {
+    const id = event.target.id;
+    const correspondingWidget = document.getElementById(`book-id-${id}`)
+    correspondingWidget.remove()
+    library[id] = null;
+}
+
 function validateInputs(title, author, pages) {
     if (title === '' || author === '' || pages === '') {
         alert('Please ensure the input fields are not empty');
@@ -74,7 +81,7 @@ function generateBookWidget(title, author, pages, read, id) {
     const attName = ['', 'by ', 'Pages: '];
     const bookWidget = document.createElement('div');
     bookWidget.setAttribute('class', 'book-widget');
-    bookWidget.setAttribute('id', `${id}`);
+    bookWidget.setAttribute('id', `book-id-${id}`);
     attArr.forEach((att, index) => {
         let info = document.createElement('p');
         info.innerText = attName[index] + att;
@@ -101,6 +108,14 @@ function generateBookWidget(title, author, pages, read, id) {
         }
     });
     bookWidget.append(isReadButton);
+
+    //remove book button
+    const removeBookButton = document.createElement('button');
+    removeBookButton.setAttribute('class', 'remove-book-btn');
+    removeBookButton.innerText = 'Remove';
+    removeBookButton.setAttribute('id', `${id}`)
+    bookWidget.append(removeBookButton);
+    removeBookButton.addEventListener('click', removeBookEntry)
 
     displayBookWidget(bookWidget);
 }
