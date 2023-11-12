@@ -326,9 +326,11 @@ button:active {
 #add-book-menu > form > div > input {
     width: 100%;
     font-size: inherit;
+    border-radius: 5px;
+    padding: 0 5px;
 }
 
-#read-toggle {
+#read-input {
     justify-self: start;
     width: 20px;
     height: 20px;
