@@ -215,6 +215,10 @@ body {
     font-weight: bold;
 }
 
+.nav-bar button {
+    margin-left: 30px;
+}
+
 button {
     background-color: var(--secondary-color);
     font-size: 16px;
@@ -222,7 +226,6 @@ button {
     border: 0px;
     border-radius: 10px;
     padding: 7px 20px;
-    margin-left: 30px;
 }
 
 button:hover{
