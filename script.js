@@ -89,6 +89,15 @@ function validateInputs(title, author, pages) {
     }
 }
 
+function toggleIsRead(id) {
+    const currentState = library[id].read;
+    if (library[id].read === true) {
+        library[id].read = false;
+    } else {
+        library[id].read = true;
+    }
+}
+
 function generateBookWidget(title, author, pages, read, id) {
     const attArr = [title, author, pages];
     const attName = ['', 'by ', 'Pages: '];
@@ -115,9 +124,11 @@ function generateBookWidget(title, author, pages, read, id) {
         if (buttonColor === 'background-color: rgb(87, 184, 87);') {
             isReadButton.innerText = 'Not read';
             isReadButton.setAttribute('style', 'background-color: rgb(228, 110, 139);')
+            toggleIsRead(id);
         } else {
             isReadButton.innerText = 'Read';
             isReadButton.setAttribute('style', 'background-color: rgb(87, 184, 87);')
+            toggleIsRead(id);
         }
     });
     bookWidget.append(isReadButton);
