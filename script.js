@@ -90,7 +90,6 @@ function validateInputs(title, author, pages) {
 }
 
 function toggleIsRead(id) {
-    const currentState = library[id].read;
     if (library[id].read === true) {
         library[id].read = false;
     } else {
@@ -99,6 +98,8 @@ function toggleIsRead(id) {
 }
 
 function generateBookWidget(title, author, pages, read, id) {
+    
+
     const attArr = [title, author, pages];
     const attName = ['', 'by ', 'Pages: '];
     const bookWidget = document.createElement('div');
