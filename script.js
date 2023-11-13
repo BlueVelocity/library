@@ -70,9 +70,11 @@ function removeBookEntry(event) {
     library[id] = null;
 }
 
-function checkIfBookExists(title, author) {
+function checkIfBookExists(thisTitle, author) {
     for (let i = 0; i < library.length; i++) {
-        if (library[i].title.toLowerCase() === title.toLowerCase() &&
+        if(library[i] === null) {
+            continue
+        } else if (library[i].title.toLowerCase() === thisTitle.toLowerCase() &&
             library[i].author.toLowerCase() === author.toLowerCase()) {
                 return true
             }
