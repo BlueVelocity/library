@@ -25,16 +25,18 @@ function exitAddBookMenu(event) {
 }
 
 //Book classes and functions
-function Book(title, author, pages, read, bookId) {
-    this.title = title;
-    this.author = author;
-    this.page = Number(pages);
-    this.read = read;
-    this.bookId = bookId;
-}
+class Book {
+    constructor(title, author, pages, read, bookId) {
+        this.title = title;
+        this.author = author;
+        this.page = Number(pages);
+        this.read = read;
+        this.bookId = bookId;
+    }
 
-Book.prototype.info = function() {
-    return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
+    info() {
+        return `${this.title} by ${this.author}, ${this.pages} pages, ${this.read}`
+    }
 }
 
 const library =[];
