@@ -1,110 +1,110 @@
 /* FONTS */
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-BlackItalic.woff2') format('woff2'),
-        url('./fonts/Roboto-BlackItalic.woff') format('woff');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-BlackItalic.woff2") format("woff2"),
+    url("./fonts/Roboto-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-BoldItalic.woff2') format('woff2'),
-        url('./fonts/Roboto-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-BoldItalic.woff2") format("woff2"),
+    url("./fonts/Roboto-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Bold.woff2') format('woff2'),
-        url('./fonts/Roboto-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Bold.woff2") format("woff2"),
+    url("./fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-MediumItalic.woff2') format('woff2'),
-        url('./fonts/Roboto-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-MediumItalic.woff2") format("woff2"),
+    url("./fonts/Roboto-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Black.woff2') format('woff2'),
-        url('./fonts/Roboto-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Black.woff2") format("woff2"),
+    url("./fonts/Roboto-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Italic.woff2') format('woff2'),
-        url('./fonts/Roboto-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Italic.woff2") format("woff2"),
+    url("./fonts/Roboto-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Medium.woff2') format('woff2'),
-        url('./fonts/Roboto-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Medium.woff2") format("woff2"),
+    url("./fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
-        url('./fonts/Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.woff2") format("woff2"),
+    url("./fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-LightItalic.woff2') format('woff2'),
-        url('./fonts/Roboto-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-LightItalic.woff2") format("woff2"),
+    url("./fonts/Roboto-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Light.woff2') format('woff2'),
-        url('./fonts/Roboto-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Light.woff2") format("woff2"),
+    url("./fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-Thin.woff2') format('woff2'),
-        url('./fonts/Roboto-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Thin.woff2") format("woff2"),
+    url("./fonts/Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('./fonts/Roboto-ThinItalic.woff2') format('woff2'),
-        url('./fonts/Roboto-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-ThinItalic.woff2") format("woff2"),
+    url("./fonts/Roboto-ThinItalic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* CSS RESET */
@@ -113,288 +113,369 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* STYLING STARTS HERE */
 :root {
-    font-family: 'Roboto';
-    --background: #475569;
-    --box-shadow: #333e4d;
-    --main-color: #cbd5e1;
-    --secondary-color: royalblue;
-    --main-width: 1100px;
+  font-family: "Roboto";
+  --background: #475569;
+  --box-shadow: #333e4d;
+  --main-color: #cbd5e1;
+  --secondary-color: royalblue;
+  --main-width: 1100px;
 }
 
 html {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
 }
 
 body {
-    position: relative;
-    flex: 1;
-    max-width: 1920px;
-    background-color: var(--background);
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px 1fr;
+  position: relative;
+  flex: 1;
+  max-width: 1920px;
+  background-color: var(--background);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
 }
 
 .secondary-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: var(--main-width);
-    margin: 30px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--main-width);
+  margin: 30px;
 }
 
 .nav-bar,
 .content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-bar {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    background-color:var(--main-color);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: var(--main-color);
 }
 
 .nav-bar h1 {
-    font-size: 36px;
-    margin-right: auto;
-    font-weight: bold;
+  font-size: 36px;
+  margin-right: auto;
+  font-weight: bold;
 }
 
 .nav-bar button {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 button {
-    background-color: var(--secondary-color);
-    font-size: 16px;
-    font-weight: bold;
-    border: 0px;
-    border-radius: 10px;
-    padding: 7px 20px;
+  background-color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 10px;
+  padding: 7px 20px;
 }
 
-button:hover{
-    color: whitesmoke;
-    background-color: var(--background);
+button:hover {
+  color: whitesmoke;
+  background-color: var(--background);
 }
 
 button:active {
-    background-color: var(--main-color);
-    box-shadow: 2px 2px 2px inset grey;
-    color: black;
+  background-color: var(--main-color);
+  box-shadow: 2px 2px 2px inset grey;
+  color: black;
 }
 
 .content-container {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    align-items: start;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  align-items: start;
 }
 
 .book-widget-container {
-    flex: 1;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 300px;
-    grid-auto-rows: 300px;
-    gap: 30px;
+  flex: 1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 300px;
+  grid-auto-rows: 300px;
+  gap: 30px;
 }
 
 .book-widget {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-    background-color: var(--main-color);
-    width: 90%;
-    height: 90%;
-    border-radius: 20px;
-    margin: 2px;
-    padding: 5%;
+  background-color: var(--main-color);
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  margin: 2px;
+  padding: 5%;
 
-    font-size: 24px;
-    font-weight: bold;
-    overflow: hidden;
-    word-wrap: break-word;
+  font-size: 24px;
+  font-weight: bold;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .book-widget p {
-    text-align: center;
-    text-overflow: clip;
+  text-align: center;
+  text-overflow: clip;
 }
 
 .book-widget:hover {
-    margin: 0px;
+  margin: 0px;
 }
 
 .book-widget > div {
-    flex: 1;
+  flex: 1;
 }
 
 .book-widget button {
-    margin: 0;
-    width: 10em;
-    height: 3em;
+  margin: 0;
+  width: 10em;
+  height: 3em;
 }
 
 .book-widget button:active {
-    box-shadow: 4px 4px 4px inset grey;
+  box-shadow: 4px 4px 4px inset grey;
 }
 
 .book-widget .remove-book-btn {
-    width: 8em;
-    height: 2em;
-    font-size: 0.6em;
+  width: 8em;
+  height: 2em;
+  font-size: 0.6em;
 }
 
 .add-book {
-    place-self: center;
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-    background-color: rgb(25, 150, 25);
-    color: var(--background);
-    border: 0px;
-    border-radius: 30px;
+  place-self: center;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  background-color: rgb(25, 150, 25);
+  color: var(--background);
+  border: 0px;
+  border-radius: 30px;
 }
 
 .book-widget,
 .add-book {
-    box-shadow: 4px 4px 4px var(--box-shadow);
+  box-shadow: 4px 4px 4px var(--box-shadow);
 }
 
 .book-widget:hover,
 .add-book:hover {
-    box-shadow: 4px 4px 4px black;
+  box-shadow: 4px 4px 4px black;
 }
 
 .add-book:hover {
-    color: var(--background);
-    background-color: var(--secondary-color);
+  color: var(--background);
+  background-color: var(--secondary-color);
 }
 
 #add-book-menu {
-    position: fixed;
-    top: 40vh;
-    left: 50vw;
-    translate: -50% -50%;
-    width: max(300px, 25%);
-    height: 200px;
-    padding: 30px;
+  position: fixed;
+  top: 40vh;
+  left: 50vw;
+  translate: -50% -50%;
+  width: max(300px, 25%);
+  height: 200px;
+  padding: 30px;
 
-    background-color: var(--main-color);
-    border-radius: 20px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 5px black;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px black;
 
-    display: flex;
+  display: flex;
 }
 
 #add-book-menu > form {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
 #add-book-menu > form > div {
-    grid-column: 1 / 7 ;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+  grid-column: 1 / 7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 
-    font-size: 16px;
+  font-size: 16px;
 }
 
 #add-book-menu > form > div > input {
-    width: 100%;
-    font-size: inherit;
-    border-radius: 5px;
-    padding: 0 5px;
+  width: 100%;
+  font-size: inherit;
+  border-radius: 5px;
+  padding: 0 5px;
 }
 
-#add-book-menu > form > div > input[type='text']:focus,
-#add-book-menu > form > div > input[type='number']:focus  {
-    outline: 1px blue solid;
-    box-shadow: 2px 2px 4px grey;
+#add-book-menu > form > div > input[type="text"]:focus,
+#add-book-menu > form > div > input[type="number"]:focus {
+  outline: 1px blue solid;
+  box-shadow: 2px 2px 4px grey;
 }
 
 #add-book-menu > form > div > input:invalid {
-    outline: 1px rgb(255, 116, 116) solid;
+  outline: 1px rgb(255, 116, 116) solid;
 }
 
 #add-book-menu > form > div > span {
-    justify-self: start;
-    align-self: start;
-    grid-column: 2 / 3;
+  justify-self: start;
+  align-self: start;
+  grid-column: 2 / 3;
 }
 
 #add-book-menu > form > div > input:invalid + span:before {
-    content: '*No numbers';
-    font-size: 0.8rem;
-    color: red; 
+  content: "*No numbers";
+  font-size: 0.8rem;
+  color: red;
 }
 
 #read-input {
-    justify-self: start;
-    width: 20px;
-    height: 20px;
+  justify-self: start;
+  width: 20px;
+  height: 20px;
 }

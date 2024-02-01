@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Library</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="nav-bar">
-        <div class="secondary-container">
-            <h1>Library</h1>
-            <button id="add-book-btn">+Add Book</button>
-            <button>Log In</button>
-        </div>
+      <div class="secondary-container">
+        <h1>Library</h1>
+        <button id="add-book-btn">+Add Book</button>
+        <button>Log In</button>
+      </div>
     </div>
-    <div id="add-book-menu" style="visibility: hidden;">
-        <form>
-            <div>
-                <label for="title">Title:</label>
-                <input type="text" name="title" id="title-input" required>
-            </div>
-            <div>
-                <label for="author">Author:</label>
-                <input type="text" pattern="^[^0-9]+$" name="author" id="author-input" required>
-                <span></span>
-            </div>
-            <div>
-                <label for="num-pages">Number of Pages:</label>
-                <input type="number" name="num-pages" id="num-pages-input" required>
-            </div>
-            <div>
-                <label for="read-input">Book Is Read:</label>
-                <input type="checkbox" name="read" id="read-input">
-            </div>
-            <div>
-                <button id="add-book-enter-button">Enter</button>
-                <button id="add-book-exit-button">Exit</button>
-            </div>
-        </form>
+    <div id="add-book-menu" style="visibility: hidden">
+      <form>
+        <div>
+          <label for="title">Title:</label>
+          <input type="text" name="title" id="title-input" required />
+        </div>
+        <div>
+          <label for="author">Author:</label>
+          <input
+            type="text"
+            pattern="^[^0-9]+$"
+            name="author"
+            id="author-input"
+            required
+          />
+          <span></span>
+        </div>
+        <div>
+          <label for="num-pages">Number of Pages:</label>
+          <input type="number" name="num-pages" id="num-pages-input" required />
+        </div>
+        <div>
+          <label for="read-input">Book Is Read:</label>
+          <input type="checkbox" name="read" id="read-input" />
+        </div>
+        <div>
+          <button id="add-book-enter-button">Enter</button>
+          <button id="add-book-exit-button">Exit</button>
+        </div>
+      </form>
     </div>
     <div class="content-container">
-        <div class="secondary-container">
-            <div class="book-widget-container" id="book-container">
-                <button class="add-book" id="add-book-btn">+</button>
-            </div>
+      <div class="secondary-container">
+        <div class="book-widget-container" id="book-container">
+          <button class="add-book" id="add-book-btn">+</button>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
