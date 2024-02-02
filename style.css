@@ -448,18 +448,19 @@ button:active {
 #add-book-menu > form > div > input {
   width: 100%;
   font-size: inherit;
+  border: none;
   border-radius: 5px;
   padding: 0 5px;
 }
 
 #add-book-menu > form > div > input[type="text"]:focus,
 #add-book-menu > form > div > input[type="number"]:focus {
-  outline: 1px blue solid;
+  outline: 2px blue solid;
   box-shadow: 2px 2px 4px grey;
 }
 
 #add-book-menu > form > div > input:invalid {
-  outline: 1px rgb(255, 116, 116) solid;
+  outline: 2px rgb(255, 116, 116) solid;
 }
 
 #add-book-menu > form > div > span {
@@ -468,14 +469,18 @@ button:active {
   grid-column: 2 / 3;
 }
 
-#add-book-menu > form > div > input:invalid + span:before {
-  content: "*No numbers";
-  font-size: 0.8rem;
-  color: red;
-}
-
 #read-input {
   justify-self: start;
   width: 20px;
   height: 20px;
+}
+
+.error {
+  padding-top: 0.2rem;
+  font-size: 0.7rem;
+  color: red;
+}
+
+.error.active:before {
+  content: "*";
 }

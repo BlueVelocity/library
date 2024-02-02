@@ -16,10 +16,11 @@
       </div>
     </div>
     <div id="add-book-menu" style="visibility: hidden">
-      <form>
+      <form novalidate>
         <div>
           <label for="title">Title:</label>
           <input type="text" name="title" id="title-input" required />
+          <span id="title-error" class="error"></span>
         </div>
         <div>
           <label for="author">Author:</label>
@@ -30,11 +31,12 @@
             id="author-input"
             required
           />
-          <span></span>
+          <span id="author-error" class="error"></span>
         </div>
         <div>
           <label for="num-pages">Number of Pages:</label>
           <input type="number" name="num-pages" id="num-pages-input" required />
+          <span id="num-pages-error" class="error"></span>
         </div>
         <div>
           <label for="read-input">Book Is Read:</label>

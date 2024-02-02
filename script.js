@@ -6,14 +6,60 @@ const addBookEnterBtn = document.getElementById("add-book-enter-button");
 const exitAddBookBtn = document.getElementById("add-book-exit-button");
 const bookContainer = document.getElementById("book-container");
 
+const title = document.getElementById("title-input");
+const titleError = document.getElementById("title-error");
+const author = document.getElementById("author-input");
+const authorError = document.getElementById("author-error");
+const pages = document.getElementById("num-pages-input");
+const pagesError = document.getElementById("num-pages-error");
+
 //Event listeners
 addBookBtns.forEach((btn) => {
   btn.addEventListener("click", displayAddBookMenu);
 });
-addBookEnterBtn.addEventListener("click", createBookEntry);
 exitAddBookBtn.addEventListener("click", exitAddBookMenu, false);
 
-//DOM objects
+title.addEventListener("input", (event) => {
+  if (title.validity.valid) {
+    titleError.textContent = "";
+    titleError.classList = "error";
+  } else if (!checkIfBookExists(title.value, author.value)) {
+    showInputError();
+  } else {
+    showInputError();
+  }
+});
+
+author.addEventListener("input", (event) => {
+  if (author.validity.valid) {
+    authorError.textContent = "";
+    authorError.classList = "error";
+  } else {
+    showInputError();
+  }
+});
+
+pages.addEventListener("input", (event) => {
+  if (pages.validity.valid) {
+    pagesError.textContent = "";
+    pagesError.classList = "error";
+  } else {
+    showInputError();
+  }
+});
+
+addBookEnterBtn.addEventListener("click", (event) => {
+  if (
+    !title.validity.valid ||
+    !author.validity.valid ||
+    !pages.validity.valid
+  ) {
+    showInputError();
+  } else {
+    createBookEntry(event);
+    exitAddBookMenu(event);
+  }
+});
 
 //DOM manipulation functions
 function displayAddBookMenu() {
@@ -24,6 +70,7 @@ function exitAddBookMenu(event) {
   addBookMenu.setAttribute("style", "visibility: hidden;");
   event.preventDefault();
   clearInputFields();
+  clearErrors();
 }
 
 //Book classes and functions
@@ -49,22 +96,12 @@ function addBookToLibrary(title, author, pages, read, bookId) {
 
 function createBookEntry(event) {
   event.preventDefault();
-  let title = document.getElementById("title-input").value;
-  let author = document.getElementById("author-input").value;
-  let pages = document.getElementById("num-pages-input").value;
+
   let read = document.getElementById("read-input").checked;
   let bookId = library.length;
 
-  if (validateInputs(title, author, pages)) {
-    if (!checkIfBookExists(title, author)) {
-      addBookToLibrary(title, author, pages, read, bookId);
-      exitAddBookMenu(event);
-      generateBookWidget(title, author, pages, read, bookId);
-      clearInputFields();
-    } else {
-      alert("Book entry exists!");
-    }
-  }
+  addBookToLibrary(title.value, author.value, pages.value, read, bookId);
+  generateBookWidget(title.value, author.value, pages.value, read, bookId);
 }
 
 function removeBookEntry(event) {
@@ -87,17 +124,6 @@ function checkIfBookExists(thisTitle, author) {
   }
 }
 
-function validateInputs(title, author, pages) {
-  if (title === "" || author === "" || pages === "") {
-    alert("Please ensure the input fields are not empty");
-    return false;
-  } else if (!/^[^0-9]+$/.test(author)) {
-    return false;
-  } else {
-    return true;
-  }
-}
-
 function toggleIsRead(id) {
   if (library[id].read === true) {
     library[id].read = false;
@@ -107,10 +133,19 @@ function toggleIsRead(id) {
 }
 
 function clearInputFields() {
-  document.getElementById("title-input").value = "";
-  document.getElementById("author-input").value = "";
-  document.getElementById("num-pages-input").value = "";
+  title.value = "";
+  author.value = "";
+  pages.value = "";
   document.getElementById("read-input").checked = false;
+}
+
+function clearErrors() {
+  titleError.textContent = "";
+  titleError.classList = "error";
+  authorError.textContent = "";
+  authorError.classList = "error";
+  pagesError.textContent = "";
+  pagesError.classList = "error";
 }
 
 function generateBookWidget(title, author, pages, read, id) {
@@ -166,4 +201,31 @@ function displayBookWidget(widget) {
   addBookBtns[1].remove();
   bookContainer.appendChild(widget);
   bookContainer.appendChild(addBookBtns[1]);
+}
+
+function showInputError() {
+  titleError.textContent = "";
+  titleError.classList = "error";
+  authorError.textContent = "";
+  authorError.classList = "error";
+  pagesError.textContent = "";
+  pagesError.classList = "error";
+
+  if (title.validity.valueMissing) {
+    titleError.textContent = "Please enter a title";
+    titleError.classList = "error active";
+  } else if (checkIfBookExists(title.value, author.value)) {
+    titleError.textContent = "Book exists";
+    titleError.classList = "error active";
+  }
+
+  if (author.validity.valueMissing) {
+    authorError.textContent = "Please enter an author";
+    authorError.classList = "error active";
+  }
+
+  if (pages.validity.valueMissing) {
+    pagesError.textContent = "Please enter page quantity";
+    pagesError.classList = "error active";
+  }
 }
