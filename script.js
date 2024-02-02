@@ -49,11 +49,15 @@ pages.addEventListener("input", (event) => {
 });
 
 addBookEnterBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
   if (
     !title.validity.valid ||
     !author.validity.valid ||
     !pages.validity.valid
   ) {
+    showInputError();
+  } else if (checkIfBookExists(title.value, author.value)) {
     showInputError();
   } else {
     createBookEntry(event);
@@ -67,8 +71,8 @@ function displayAddBookMenu() {
 }
 
 function exitAddBookMenu(event) {
-  addBookMenu.setAttribute("style", "visibility: hidden;");
   event.preventDefault();
+  addBookMenu.setAttribute("style", "visibility: hidden;");
   clearInputFields();
   clearErrors();
 }
