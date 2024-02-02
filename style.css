@@ -312,6 +312,7 @@ button {
 button:hover {
   color: whitesmoke;
   background-color: var(--background);
+  cursor: pointer;
 }
 
 button:active {

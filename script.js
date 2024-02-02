@@ -23,8 +23,6 @@ title.addEventListener("input", (event) => {
   if (title.validity.valid) {
     titleError.textContent = "";
     titleError.classList = "error";
-  } else if (!checkIfBookExists(title.value, author.value)) {
-    showInputError();
   } else {
     showInputError();
   }
@@ -115,12 +113,12 @@ function removeBookEntry(event) {
   library[id] = null;
 }
 
-function checkIfBookExists(thisTitle, author) {
+function checkIfBookExists(title, author) {
   for (let i = 0; i < library.length; i++) {
     if (library[i] === null) {
       continue;
     } else if (
-      library[i].title.toLowerCase() === thisTitle.toLowerCase() &&
+      library[i].title.toLowerCase() === title.toLowerCase() &&
       library[i].author.toLowerCase() === author.toLowerCase()
     ) {
       return true;
